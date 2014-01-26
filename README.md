@@ -39,3 +39,8 @@ The _build-test-data_ plugin extends your domain objects with a `build()` method
 all mandatory fields and even mandatory association graphs. This is done via Groovy's meta-programming model.
 In the example test the `Ad.build()` will automatically populate the non-nullable `make` property with a proper `Make`
 object.
+
+
+Asynchronous Programming Example: `AsyncController`
+---------------------------------------------------
+tbd ...
