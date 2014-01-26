@@ -1,8 +1,6 @@
 package grails.showcase
 
-import grails.rest.Resource
 
-@Resource(uri='/ads')
 class Ad {
 
     Make make

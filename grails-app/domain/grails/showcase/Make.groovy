@@ -3,7 +3,7 @@ package grails.showcase
 import grails.rest.Resource
 
 
-@Resource(uri='/makes')
+@Resource
 class Make {
 
     String key
