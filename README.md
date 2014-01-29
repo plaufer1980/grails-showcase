@@ -15,6 +15,16 @@ like date picker or numeric fields. There's inline validation with international
 `Make` in this case, are nicely pre-populated into drop-down select fields.
 
 
+#### Dependency Injection Example: `HelloService`
+Dependency Injection works by convention as well. No XML config, no annotations necessary.
+Have a look at `HelloController`. The `HelloService` is injected automatically via auto-wiring by name.
+
+
+#### View Rendering Example: `HelloController.service()`
+If your controller method just returns a model, Grails looks for a template matching the controller method name.
+In the example it will find the `service.gsp` in _views/hello_ and render with the model returned by the controller method.
+
+
 #### RESTful Resource Example: `Make`
 The `Make` domain is annotated with `@Resource` which automatically provides RESTful operations for makes.
 Run `grails url-mapping-report` to get an overview of the provided REST actions.
@@ -37,4 +47,4 @@ object.
 
 
 #### Asynchronous Programming Example: `AsyncController`
-tbd ...
+Since Grails 2.3 there is support for asynchronous programming. Have a look at `AsyncController` to get an idea of it works.
